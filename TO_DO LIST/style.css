@@ -1,0 +1,83 @@
+
+/* Background image for the page */
+body {
+    background-image: url(/images/skyimg.jpg); /* Replace with your desired image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff; /* Set text color for contrast */
+}
+
+.checked {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.task-text[contenteditable="true"]:empty:before {
+    content: "Click to edit...";
+    color: #aaa;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add transparent background to make the text more readable */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+.list-item span{
+    margin-left: 3px;
+}
+
+.task-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.bi-pencil-square {
+    color: green;
+}
+
+.bi-pencil {
+    color: blue;
+}
+
+.bi-trash {
+    color: red;
+}
+
+#taskInput {
+    margin-bottom: 10px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Add background overlay to container */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+/* Filter buttons */
+.filter-buttons {
+    margin-bottom: 5px;
+}
+
+.filter-buttons button {
+    /* margin-right: 5px; */
+    font-size: 10px;
+}
